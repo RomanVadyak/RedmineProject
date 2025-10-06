@@ -1,0 +1,79 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - list:
+        - listitem [ref=e7]:
+          - link "Sign in" [ref=e8] [cursor=pointer]:
+            - /url: /login
+        - listitem [ref=e9]:
+          - link "Register" [ref=e10] [cursor=pointer]:
+            - /url: /account/register
+    - list:
+      - listitem [ref=e11]:
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e13]:
+        - link "Projects" [ref=e14] [cursor=pointer]:
+          - /url: /projects
+      - listitem [ref=e15]:
+        - link "Help" [ref=e16] [cursor=pointer]:
+          - /url: https://www.redmine.org/guide
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - link "Search" [ref=e21] [cursor=pointer]:
+            - /url: /search
+          - text: ":"
+        - textbox "Search:" [ref=e22]
+      - generic [ref=e24] [cursor=pointer]: Jump to a project...
+    - heading "Redmine" [level=1] [ref=e25]
+  - generic [ref=e26]:
+    - insertion [ref=e28]:
+      - generic [ref=e30]:
+        - generic "These are topics related to the article that might interest you" [ref=e31]: Discover more
+        - link "Redmine API development services" [ref=e32] [cursor=pointer]:
+          - img [ref=e34] [cursor=pointer]
+          - generic [ref=e36] [cursor=pointer]: Redmine API development services
+        - link "Project management certification" [ref=e37] [cursor=pointer]:
+          - img [ref=e39] [cursor=pointer]
+          - generic [ref=e41] [cursor=pointer]: Project management certification
+        - link "PM software comparison" [ref=e42] [cursor=pointer]:
+          - img [ref=e44] [cursor=pointer]
+          - generic [ref=e46] [cursor=pointer]: PM software comparison
+        - link "Password management software" [ref=e47] [cursor=pointer]:
+          - img [ref=e49] [cursor=pointer]
+          - generic [ref=e51] [cursor=pointer]: Password management software
+        - link "Redmine administrator job openings" [ref=e52] [cursor=pointer]:
+          - img [ref=e54] [cursor=pointer]
+          - generic [ref=e56] [cursor=pointer]: Redmine administrator job openings
+        - link "Redmine hosting services" [ref=e57] [cursor=pointer]:
+          - img [ref=e59] [cursor=pointer]
+          - generic [ref=e61] [cursor=pointer]: Redmine hosting services
+        - link "Redmine project management software" [ref=e62] [cursor=pointer]:
+          - img [ref=e64] [cursor=pointer]
+          - generic [ref=e66] [cursor=pointer]: Redmine project management software
+        - link "Redmine security audit services" [ref=e67] [cursor=pointer]:
+          - img [ref=e69] [cursor=pointer]
+          - generic [ref=e71] [cursor=pointer]: Redmine security audit services
+    - generic [ref=e74]:
+      - generic [ref=e75]: Login
+      - textbox "Login" [ref=e76]: Tad68
+      - generic [ref=e77]:
+        - text: Password
+        - link "Lost password" [ref=e78] [cursor=pointer]:
+          - /url: /account/lost_password
+      - textbox "Password Lost password" [ref=e79]: ZV52x2JIj1zzfYc
+      - generic [ref=e80]:
+        - checkbox "Stay logged in" [checked] [active] [ref=e81]
+        - text: Stay logged in
+      - button "Login" [ref=e82] [cursor=pointer]
+  - generic [ref=e83]:
+    - text: Powered by
+    - link "Redmine" [ref=e84] [cursor=pointer]:
+      - /url: https://www.redmine.org/
+    - text: © 2006-2023 Jean-Philippe Lang
+```
