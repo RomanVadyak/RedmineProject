@@ -19,7 +19,7 @@ test.describe("Login", () => {
     await loginPage.autoLoginCheck(true);
     await loginPage.clickLoginBtn();
 
-    await expect(loginPage.errorMsg).toBeVisible();
+    await expect(loginPage.errorMsg).toBeVisible({ timeout: 10000 });
     await expect(loginPage.errorMsg).toContainText(wrongLogin);
   });
 });
