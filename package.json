@@ -5,10 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
     "report:html:show": "playwright show-report reports/html"
   },
-  "keywords": [],
-  "author": "https://github.com/RomanVadyak",
+  "keywords": [
+    "playwright",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Vadyak Roman https://github.com/RomanVadyak",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^10.0.0",

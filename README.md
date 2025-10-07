@@ -2,29 +2,29 @@ Repository with Playwright UI tests for the Redmine site (https://www.redmine.or
 
 # Install
 
-install Node.js: https://nodejs.org/
+Install Node.js: https://nodejs.org/ (v22.18.0)
 
-install Git: https://git-scm.com/
+Install Git: https://git-scm.com/ (v2.39.3)
 
-# clone repository
+# Clone repository
 
 ```
 git clone <https://github.com/RomanVadyak/RedmineProject.git>
 ```
 
-# go to the project folder
+# Go to the project folder
 
 ```
 cd Redmine_PlaywrightHW
 ```
 
-# install dependencies
+# Install dependencies
 
 ```
 npm install
 ```
 
-# install Playwright browsers
+# Install Playwright browsers
 
 ```
 npm playwright install
@@ -47,7 +47,5 @@ npm run test:headed
 # Folders:
 
 pages — Page Object Model classes
-
-test-results - results with screenshot and test trace
 
 tests — spec files

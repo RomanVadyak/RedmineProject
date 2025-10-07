@@ -19,9 +19,11 @@ export class LoginPage {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
   }
+
   async autoLoginCheck(value: boolean) {
     this.stayInSystem.setChecked(value);
   }
+  
   async clickLoginBtn() {
     this.logInBtn.click();
   }

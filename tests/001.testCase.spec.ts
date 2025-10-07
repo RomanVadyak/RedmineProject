@@ -2,11 +2,10 @@ import { test, expect } from "@playwright/test";
 import { BasePage } from "../pages/base.page";
 import { ForumPage } from "../pages/forum.page";
 import { HelpPage } from "../pages/help.page";
+import { publicHelp } from "../helpers/constants";
 
-test(
-  "Help title is visible and subtitle have correct text",
-  { tag: "@001" },
-  async ({ page }) => {
+test.describe("Assertions with Help page", () => {
+  test("Help title is visible and subtitle have correct text", async ({ page }) => {
     const basePage = new BasePage(page);
     const forumPage = new ForumPage(page);
     const helpPage = new HelpPage(page);
@@ -17,6 +16,6 @@ test(
     await forumPage.openHelpPage();
 
     await expect(helpPage.helpTitle).toBeVisible();
-    await expect(helpPage.helpSubtitle).toContainText("Get public help");
-  }
-);
+    await expect(helpPage.helpSubtitle).toContainText(publicHelp);
+  });
+});

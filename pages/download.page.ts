@@ -19,6 +19,7 @@ export class DownloadPage {
   async goToRoadmapPage() {
     await this.roadmapBtn.click();
   }
+
   async goToBackPage() {
     await this.goBackBtn.click();
   }

@@ -1,16 +1,17 @@
 import { test, expect } from "@playwright/test";
 import { BasePage } from "../pages/base.page";
+import { searchWord, noResults } from "../helpers/constants";
 
-test(
-  'No results return for the searching "playwright"',
-  { tag: "@002" },
-  async ({ page }) => {
-    const basePage = new BasePage(page);
+test.describe("Searching for playwright", () => {
+  test(
+    'No results return for the searching "playwright"', async ({ page }) => {
+      const basePage = new BasePage(page);
 
-    await basePage.goto();
+      await basePage.goto();
 
-    await basePage.searchFor("playwright");
+      await basePage.searchFor(searchWord);
 
-    await expect(basePage.searchResults).toContainText("Results (0)");
-  }
-);
+      await expect(basePage.searchResults).toContainText(noResults);
+    }
+  );
+});

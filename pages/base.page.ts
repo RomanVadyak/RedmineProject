@@ -22,19 +22,24 @@ export class BasePage {
   async goto() {
     await this.page.goto("/");
   }
+
   async openForumPage() {
     await this.forumBtn.click();
   }
+
   async searchFor(word: string) {
     await this.searchInput.fill(word);
     await this.searchInput.press("Enter");
   }
+
   async goToLoginPage() {
     await this.loginBtn.click();
   }
+
   async goToDownloadPage() {
     await this.downloadBtn.click();
   }
+
   async goToProjectsPage() {
     await this.projectsBtn.click();
   }
