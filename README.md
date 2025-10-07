@@ -46,6 +46,8 @@ npm run test:headed
 
 # Folders:
 
+helpers - texts in constants
+
 pages — Page Object Model classes
 
 tests — spec files
