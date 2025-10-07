@@ -5,23 +5,21 @@ import { faker } from "@faker-js/faker";
 import { wrongLogin } from "../helpers/constants";
 
 test.describe("Login", () => {
-  test(
-    "Login attempt with unregistered credentials shows error", async ({ page }) => {
-      const basePage = new BasePage(page);
-      const loginPage = new LoginPage(page);
+  test("Login attempt with unregistered credentials shows error", async ({ page }) => {
+    const basePage = new BasePage(page);
+    const loginPage = new LoginPage(page);
 
-      await basePage.goto();
-      await basePage.goToLoginPage();
+    await basePage.goto();
+    await basePage.goToLoginPage();
 
-      const username = faker.internet.username();
-      const password = faker.internet.password();
+    const username = faker.internet.username();
+    const password = faker.internet.password();
 
-      await loginPage.fillLoginForm(username, password);
-      await loginPage.autoLoginCheck(true);
-      await loginPage.clickLoginBtn();
+    await loginPage.fillLoginForm(username, password);
+    await loginPage.autoLoginCheck(true);
+    await loginPage.clickLoginBtn();
 
-      await expect(loginPage.errorMsg).toBeAttached();
-      await expect(loginPage.errorMsg).toContainText(wrongLogin);
-    }
-  );
+    await expect(loginPage.errorMsg).toBeVisible();
+    await expect(loginPage.errorMsg).toContainText(wrongLogin);
+  });
 });
